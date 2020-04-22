@@ -39,15 +39,11 @@ span {
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: var(--white-BG);
-}
 header h1 {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 1.6rem;
   margin-top: 25px;
-  color: var(--white-theme-dark-text-color-color);
   margin-bottom: 5px;
 }
 .container {
@@ -55,17 +51,14 @@ header h1 {
   margin: auto;
 }
 header small {
-  color: var(--white-theme-white-text-color);
   text-transform: capitalize;
   font-weight: 700;
   font-size: 1rem;
 }
 hr {
-  color: var(--white-theme-white-text-color);
   margin-top: 25px;
 }
 header {
-  background-color: var(--white-top-BG);
   position: absolute;
   top: 0;
   right: 0;
@@ -75,7 +68,6 @@ header {
   height: 35vh;
 }
 .change-theme p {
-  color: var(--white-theme-white-text-color);
   text-transform: capitalize;
   font-weight: 700;
 }
@@ -86,7 +78,6 @@ main .social-collection {
   display: grid;
 }
 main .social-collection .point {
-  background-color: var(--white-card-BG);
   padding: 20px 0px;
   text-align: center;
   border-radius: 4px;
@@ -107,7 +98,6 @@ main .social-collection .youtube {
 }
 main .social-collection .point .top-card {
   margin: 15px;
-  color: var(--white-theme-white-text-color);
   font-weight: 700;
   font-size: 0.9rem;
   display: flex;
@@ -118,7 +108,6 @@ main .social-collection .point .top-card img {
   margin-right: 5px;
 }
 main .social-collection .point h2 {
-  color: var(--white-theme-dark-text-color);
   margin-top: 15px;
   font-size: 4rem;
 }
@@ -159,7 +148,6 @@ header .switch-on::after {
 }
 .point .followers {
   text-transform: uppercase;
-  color: var(--white-theme-white-text-color);
   letter-spacing: 0.4rem;
 }
 main .point .total {
@@ -218,7 +206,6 @@ main .point .total img {
 }
 .overview h2 {
   margin: 20px 0;
-  color: var(--white-theme-white-text-color);
   font-size: 1.5rem;
 }
 
@@ -227,7 +214,6 @@ main .point .total img {
 }
 
 .overview .overview-collection .over-point {
-  background-color: var(--white-card-BG);
   border-radius: 6px;
   margin-bottom: 15px;
   padding: 25px;
@@ -255,19 +241,17 @@ main .point .total img {
 
 .overview .overview-collection .over-point .over-point-top p {
   font-weight: 700;
-  color: var(--white-theme-white-text-color);
 }
 
 .overview .overview-collection .over-point .over-bottom .number {
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--white-theme-dark-text-color);
 }
 @media (min-width: 520px) {
   .overview .overview-collection {
     grid-template-columns: 1fr 1fr;
   }
-  .overview .overview-collection .over-point{
+  .overview .overview-collection .over-point {
     margin-right: 20px;
   }
 }
@@ -280,4 +264,54 @@ main .point .total img {
   .overview .overview-collection {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+/* LIGHT THEME */
+.light-theme {
+  background-color: var(--white-BG);
+}
+.light-theme header {
+  background-color: var(--white-top-BG);
+}
+.light-theme main .social-collection .point,
+.light-theme .overview .overview-collection .over-point {
+  background-color: var(--white-card-BG);
+}
+.light-theme header h1,
+.light-theme main .social-collection .point h2,
+.light-theme .overview .overview-collection .over-point .over-bottom .number {
+  color: var(--white-theme-dark-text-color-color);
+}
+.light-theme header small,
+.light-theme hr,
+.light-theme .change-theme p,
+.light-theme main .social-collection .point .top-card,
+.light-theme .point .followers,
+.light-theme .overview h2,
+.light-theme .overview .overview-collection .over-point .over-point-top p {
+  color: var(--white-theme-white-text-color);
+}
+/* DARK THEME */
+.dark-theme {
+  background-color: var(--dark-BG);
+}
+.dark-theme header {
+  background-color: var(--dark-top-BG);
+}
+.dark-theme main .social-collection .point,
+.dark-theme .overview .overview-collection .over-point {
+  background-color: var(--dark-card-BG);
+}
+.dark-theme header h1,
+.dark-theme main .social-collection .point h2,
+.dark-theme .overview .overview-collection .over-point .over-bottom .number,
+.dark-theme .overview h2 {
+  color: var(--dark-theme-white-text-color);
+}
+.dark-theme header small,
+.dark-theme hr,
+.dark-theme .change-theme p,
+.dark-theme main .social-collection .point .top-card,
+.dark-theme .point .followers,
+.dark-theme .overview .overview-collection .over-point .over-point-top p {
+  color: var(--dark-theme-dark-text-color);
 }
